@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700');
+
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'poppins', sans-serif;
+	background: rgba(251, 251, 251, 1);
+}
+
+#header{
+	background: #F39B6D;
+	text-align: center;
+	padding: 40px;
+	font-weight: 700;
+}
+
+#logo span{
+	color: white;
+}
+
+.post{
+	position: relative;
+	margin: auto;
+	width: 80%;
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img-container{
+	width: 40%;
+}
+
+.img-container img{
+	width: 100%;
+	max-height: 300px;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.img-container img:hover{
+	transform: translateY(-10px);
+	box-shadow: -10px 10px 0px #F39B6D;
+}
+
+.content-container{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+}
+
+.content-container p{
+		font-weight: 600;
+		line-height: 1.9em;
+		color: grey;
+		text-align: left;
+}
+.content-container a{
+	color: #F39B6D;
+}
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.reverse > .img-container img:hover{
+	box-shadow: 10px 10px 0px #F39B6D;
+}
+
+.btn{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+.btn button{
+	outline: none;
+	background: transparent;
+	color: #F39B6D;
+	border: 2px solid #F39B6D;
+	padding: 12px 0px;
+	width: 130px;
+	font-family: 'poppins', sans-serif;
+	cursor: pointer;
+	transition: all 0,5s;
+}
+
+.btn button:hover{
+	color: white;
+	background: #F39B6D;
+}
+
+footer{
+	padding: 80px;
+	text-align: center;
+	background: #F39B6D;
+	color: white;
+}
+
+.social-media span{
+	margin: 8px 15px;
+	font-size: 24px;
+	cursor: pointer;
+}
+.social-media span:hover{
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 650px) {
+	.post{
+		width: 90%;
+		padding-top: 0px;
+	}
+
+	.img-container, .content-container{
+		width: 100%;
+	}
+	.content-container h2{
+		font-size: 20px;
+	}
+	.content-container p{
+		font-size: 14px;
+	}
+
+	.img-container img:hover, .reverse > .img-container img:hover{
+		box-shadow: none;
+		transform: translateY(0px);
+	}
+}
