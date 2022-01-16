@@ -1,1 +1,1 @@
-<img src = "mc.png" width = "800px">
+<img src = "finalout.png" width = "800px">
